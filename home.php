@@ -1,7 +1,7 @@
 <?php
-// home.php
-$judul = "Halaman Lain";
-$deskripsi = "Ini adalah halaman tambahan dari website sederhana";
+// index.php
+$nama = "Pengunjung";
+$waktu = date("Y-m-d H:i:s");
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $judul ?></title>
+    <title>Website Sederhana</title>
     <style>
         * {
             margin: 0;
@@ -18,7 +18,7 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #48c6ef 0%, #6f86d6 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -36,15 +36,15 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
             text-align: center;
         }
         h1 {
-            color: #2d3748;
+            color: #4a5568;
             margin-bottom: 20px;
         }
-        .content {
-            background: #edf2f7;
-            padding: 25px;
+        .info-box {
+            background: #f8f9ff;
+            padding: 20px;
             border-radius: 15px;
-            margin: 25px 0;
-            line-height: 1.6;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
         }
         .nav {
             margin-top: 30px;
@@ -52,51 +52,32 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
         .nav a {
             text-decoration: none;
             padding: 12px 24px;
-            background: #4299e1;
+            background: #667eea;
             color: white;
             border-radius: 8px;
             margin: 0 10px;
             transition: background 0.3s;
         }
         .nav a:hover {
-            background: #3182ce;
-        }
-        .features {
-            text-align: left;
-            margin: 20px 0;
-        }
-        .features li {
-            margin: 10px 0;
-            padding: 8px;
-            background: rgba(66, 153, 225, 0.1);
-            border-radius: 6px;
+            background: #5a67d8;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1><?= $judul ?></h1>
+        <h1>Selamat Datang di Website Sederhana ye</h1>
         
-        <div class="content">
-            <p><?= $deskripsi ?></p>
-            
-            <h3>Fitur Website:</h3>
-            <ul class="features">
-                <li>✅ PHP Native</li>
-                <li>✅ Responsive Design</li>
-                <li>✅ Dua Halaman Navigasi</li>
-                <li>✅ Styling Modern</li>
-                <li>✅ Kompatibel dengan Hugging Face</li>
-            </ul>
+        <div class="info-box">
+            <p>Halo <strong><?= htmlspecialchars($nama) ?></strong>!</p>
+            <p>Waktu server: <code><?= $waktu ?></code></p>
         </div>
 
         <div class="info-box">
-            <p><strong>Waktu Akses:</strong> <?= date('Y-m-d H:i:s') ?></p>
-            <p><strong>Status:</strong> <span style="color: green;">Aktif dan Berfungsi</span></p>
+            <h3>Tentang Website</h3>
+            <p>Ini adalah website PHP sederhana yang berjalan di Hugging Face Spaces</p>
+            <p>Status: <strong style="color: green;">✅ Berjalan dengan baik</strong></p>
         </div>
-        <div class="nav">
-            <a href="index.php">Home</a>
-        </div>
+        
     </div>
 </body>
 </html>
