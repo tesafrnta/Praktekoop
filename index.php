@@ -182,12 +182,12 @@ $waktu = date("Y-m-d H:i:s");
     <div class="container">
         <div class="header">
             <h1>Selamat Datang!</h1>
-            <p class="subtitle">Website Tesa Firna Ananta</p>
+            <p class="subtitle">Website sederhana</p>
         </div>
 
         <div class="welcome-section">
             <div class="greeting">Halo, Pengunjung!</div>
-            <div class="name-display">Tamu</div>
+            <div class="name-display">Tesa Firna Ananta</div>
         </div>
 
         <div class="info-box">
