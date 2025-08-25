@@ -1,17 +1,18 @@
-# Gunakan official PHP image dengan Apache
-FROM php:8.2-apache
+# Gunakan image resmi PHP CLI
+FROM php:8.2-cli
 
-# Salin file PHP ke direktori web
-COPY index.php /var/www/html/
 
-# (Opsional) Tambahkan ekstensi PHP jika diperlukan
-# RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Set working directory
+WORKDIR /app
 
-# Expose port 80 (default untuk Apache)
+
+# Salin semua file proyek
+COPY . /app
+
+
+# Expose port 7860 (standar di Spaces)
 EXPOSE 7860
 
-# Server akan otomatis dijalankan oleh Apache
-RUN sed -i 's/80/7860/g' /etc/apache2/ports.conf /etc/apache2/sites-enabled/000-default.conf
 
-CMD ["apache2-foreground"]
-
+# Jalankan server PHP built-in dan layani dokumen dari /app
+CMD ["php", "-S", "0.0.0.0:7860", "-t", "/app"]
