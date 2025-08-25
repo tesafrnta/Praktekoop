@@ -65,7 +65,7 @@ $waktu = date("Y-m-d H:i:s");
 </head>
 <body>
     <div class="container">
-        <h1>Selamat Datang di Website Sederhana</h1>
+        <h1>Selamat Datang di Website Sederhana Tesa</h1>
         
         <div class="info-box">
             <p>Halo <strong><?= htmlspecialchars($nama) ?></strong>!</p>
@@ -79,7 +79,6 @@ $waktu = date("Y-m-d H:i:s");
         </div>
 
         <div class="nav">
-            <a href="index.php">Home</a>
             <a href="home.php">Halaman Lain</a>
         </div>
     </div>
