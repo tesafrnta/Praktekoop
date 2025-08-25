@@ -79,7 +79,7 @@ $waktu = date("Y-m-d H:i:s");
         </div>
             
         <div class="nav">
-            <a href="Home.php"> Halaman Lain </a>
+            <a href="Praktekoop/home.php"> Halaman Lain </a>
         </div>
     </div>
 </body>
