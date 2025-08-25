@@ -77,7 +77,10 @@ $waktu = date("Y-m-d H:i:s");
             <p>Ini adalah website PHP sederhana yang berjalan di Hugging Face Spaces</p>
             <p>Status: <strong style="color: green;">✅ Berjalan dengan baik</strong></p>
         </div>
+            
+        <div class="nav">
             <a href="Home.php"> Halaman Lain </a>
+        </div>
     </div>
 </body>
 </html>
