@@ -1,6 +1,6 @@
 <?php
 // index.php
-$nama = "";
+$nama = "Semua";
 $waktu = date("Y-m-d H:i:s");
 ?>
 
