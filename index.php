@@ -2,6 +2,17 @@
 // index.php
 $nama = "Pengunjung";
 $waktu = date("Y-m-d H:i:s");
+
+// Check if 'page' parameter is set in the URL
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
+if ($page === 'home') {
+    $content = "Ini adalah halaman utama.";
+} elseif ($page === 'halaman-lain') {
+    $content = "Ini adalah halaman lain.";
+} else {
+    $content = "Halaman tidak ditemukan.";
+}
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +20,7 @@ $waktu = date("Y-m-d H:i:s");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Sederhana</title>
+    <title>Website Sederhana Tesa</title>
     <style>
         * {
             margin: 0;
@@ -74,12 +85,13 @@ $waktu = date("Y-m-d H:i:s");
 
         <div class="info-box">
             <h3>Tentang Website</h3>
-            <p>Ini adalah website PHP sederhana yang berjalan di Hugging Face Spaces</p>
+            <p><?= $content ?></p>
             <p>Status: <strong style="color: green;">✅ Berjalan dengan baik</strong></p>
         </div>
 
         <div class="nav">
-            <a href="home.php"> Halaman Lain </a>
+            <a href="?page=home">Halaman Utama</a>
+            <a href="?page=halaman-lain">Halaman Lain</a>
         </div>
     </div>
 </body>
