@@ -96,8 +96,7 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
         </div>
 
         <div class="nav">
-            <a href="index.php">Kembali ke Home</a>
-            <a href="home.php">Refresh</a>
+            <a href="index.php">Home</a>
         </div>
     </div>
 </body>
