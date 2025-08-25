@@ -94,7 +94,6 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
             <p><strong>Waktu Akses:</strong> <?= date('Y-m-d H:i:s') ?></p>
             <p><strong>Status:</strong> <span style="color: green;">Aktif dan Berfungsi</span></p>
         </div>
-
         <div class="nav">
             <a href="index.php">Home</a>
         </div>
