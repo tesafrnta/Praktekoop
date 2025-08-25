@@ -8,7 +8,7 @@ COPY index.php /var/www/html/
 # RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 # Expose port 80 (default untuk Apache)
-EXPOSE 7860
+EXPOSE 80
 
 # Server akan otomatis dijalankan oleh Apache
 RUN sed -i 's/80/7860/g' /etc/apache2/ports.conf /etc/apache2/sites-enabled/000-default.conf
