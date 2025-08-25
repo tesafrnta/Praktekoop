@@ -182,19 +182,18 @@ $waktu = date("Y-m-d H:i:s");
     <div class="container">
         <div class="header">
             <h1>Selamat Datang!</h1>
-            <p class="subtitle">Website sederhana dengan tampilan modern</p>
+            <p class="subtitle">Website sederhana Tesa</p>
         </div>
 
         <div class="welcome-section">
-            <div class="greeting">Halo, Pengunjung!</div>
-            <div class="name-display"> <a href="home.php">Halaman Lain</a></div>
+             <p>Halo <strong><?= htmlspecialchars($nama) ?></strong></p>
+            <div class="name-display"> <a href="home.php">Next</a></div>
         </div>
 
         <div class="info-box">
             <div class="server-time">
                 ⏰ Waktu server: 
-                <span class="time-display" id="serverTime">Loading...</span>
-            </div>
+                <p>Waktu server: <code><?= $waktu ?></code></p>
             <div class="docker-badge">
                 ✅ Dijalankan di <strong>Docker</strong> di Hugging Face Spaces
             </div>
