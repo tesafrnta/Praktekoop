@@ -1,7 +1,7 @@
 <?php
 // home.php
-$judul = "Halaman Lain";
-$deskripsi = "Ini adalah halaman tambahan dari website sederhana";
+$judul = "Teman-teman tau apa itu OOP?";
+$deskripsi = "Pemrograman Berorientasi Objek (OOP) adalah pemrograman yang berfokus pada objek sebagai unit utama. Objek ini menggabungkan data (atribut/properti) dan perilaku (method/fungsi) menjadi satu kesatuan.";
 ?>
 
 <!DOCTYPE html>
@@ -80,24 +80,21 @@ $deskripsi = "Ini adalah halaman tambahan dari website sederhana";
         <div class="content">
             <p><?= $deskripsi ?></p>
             
-            <h3>Fitur Website:</h3>
+            <h3>Komponen OOP:</h3>
             <ul class="features">
-                <li>✅ PHP Native</li>
-                <li>✅ Responsive Design</li>
-                <li>✅ Dua Halaman Navigasi</li>
-                <li>✅ Styling Modern</li>
-                <li>✅ Kompatibel dengan Hugging Face</li>
+                <li> Class</li>
+                <li> Object</li>
+                <li> Atribut (Properties)</li>
+                <li> Method (Fungsi)</li>
             </ul>
         </div>
 
         <div class="info-box">
             <p><strong>Waktu Akses:</strong> <?= date('Y-m-d H:i:s') ?></p>
-            <p><strong>Status:</strong> <span style="color: green;">Aktif dan Berfungsi</span></p>
         </div>
 
         <div class="nav">
-            <a href="index.php">Kembali ke Home</a>
-            <a href="home.php">Refresh</a>
+            <a href="index.php">Back</a>
         </div>
     </div>
 </body>
